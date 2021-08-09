@@ -1,5 +1,5 @@
 # apisix-dev-docker
-基于Docker 开箱即用的 APISIX 开发环境。
+基于 Docker 开箱即用的 APISIX 开发环境。
 
 ## 使用方法
 
@@ -9,7 +9,7 @@ git clone https://github.com/jagerzhang/apisix-dev-docker.git
 cd apisix-dev-docker
 docker build -t apisix:dev ./
 ```
-**此镜像已上传到 [DockerHub](https://hub.docker.com/r/jagerzhang/apisix-dev)，可以也可以直接拉取使用**
+**此镜像已上传到 [DockerHub](https://hub.docker.com/r/jagerzhang/apisix-dev)，也可以直接拉取使用**
 ```shell
 docker pull jagerzhang/apisix-dev:latest
 ```

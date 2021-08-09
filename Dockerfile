@@ -29,4 +29,3 @@ COPY docker-entrypoint.sh /
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
 CMD ["/bin/bash"]
-

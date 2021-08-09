@@ -4,10 +4,14 @@
 ## 使用方法
 
 ### 构建镜像
-```
+```shell
 git clone https://github.com/jagerzhang/apisix-dev-docker.git
 cd apisix-dev-docker
 docker build -t apisix:dev ./
+```
+**此镜像已长传到 [DockerHub](https://hub.docker.com/r/jagerzhang/apisix-dev)，可以也可以直接拉取使用**
+```shell
+docker pull jagerzhang/apisix-dev:latest
 ```
 
 ### 当本地已有 apisix 代码时
@@ -73,7 +77,7 @@ remote: Total 21 (delta 8), reused 12 (delta 5), pack-reused 0
 Unpacking objects: 100% (21/21), done.
 Submodule path 't/toolkit': checked out 'ab2471cc9cbeec6fe605120160eeb9dd17ddda2c'
 
-[root@localhost ~]# docker run --rm -ti -v `pwd`/apisix:/opt/apisix jagerzhang/test-nginx:latest bash
+[root@localhost ~]# docker run --rm -ti -v `pwd`/apisix:/opt/apisix apisix:dev bash
 root         6  0.0  0.0 124652  3968 pts/0    Rl+  13:19   0:00 etcd
 root         8  0.0  0.0   9092   672 pts/0    S+   13:19   0:00 grep etcd
 root         9  0.0  0.0   9092   672 pts/0    S+   13:19   0:00 grep etcd
